@@ -1,0 +1,32 @@
+testType: e2e #Valid types are unit, e2e, load or failure
+feature:
+    name: "Alumni"
+    owner: "onkar bande"
+    lastUpdate: "05 June, 2020"
+    status: "production" #valid status are "Being defined", "development", "test", "production"
+test:
+    summary: "Record field should show first 10 records of alumni"
+    browsers:
+        - "Chromium"
+    Steps:
+        - "Go to HR -> Alumni"
+        - "Check spelling on all text contents"
+        - "Change value of record field to 50"
+        - "Verify that the 50 alumni record present at dashboard"
+    conditions:
+        - "Test fails if alumni list is not according to record field value"
+    automation:
+        status: manual #this test is automated or not
+        testPath: #set this with a valid path if test is automated
+testRun:
+    status: pass #valid status are notRun, pass, fail, sometimeFail
+    date: "05 June, 2020" #set the last when this test was run
+    runBy: onkar #name of the person running this testType
+    duration: 15 seconds #time taken in seconds to run this test
+    env: qa #valid value are dev, qa, production
+    buildVersion: xxx #mention the build version
+    bug:
+        details:
+                "Multi time bug summary"
+        bugNum: #if bug was reported and filed, report the bug number here
+        

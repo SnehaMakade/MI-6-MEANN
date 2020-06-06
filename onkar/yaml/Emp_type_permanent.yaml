@@ -1,0 +1,33 @@
+testType: e2e #Valid types are unit, e2e, load or failure
+feature:
+    name: "Alumni"
+    owner: "onkar bande"
+    lastUpdate: "05 June, 2020"
+    status: "production" #valid status are "Being defined", "development", "test", "production"
+test:
+    summary: "Employee type 'permanent' should default value at popup"
+    browsers:
+        - "Chrome"
+        - "Chromium"
+    steps:
+        - "Go to HR -> Alumni"
+        - "Check spelling on all text contents"
+        - "Verify by default employee type 'permanent' is selected in popup form"
+        - "Verify that adding all mandatory field and press 'Add' button then displayes selected values in view alumni"
+    conditions:
+        - "Test fails if employee type 'permanent' do not displayes add alumni popup form"
+    automation:
+        status: manual #this test is automated or not
+        testPath: #set this with a valid path if test is automated
+testRun:
+    status: pass #valid status are notRun, pass, fail, sometimeFail
+    date: "05 June, 2020" #set the last when this test was run
+    runBy: onkar #name of the person running this testType
+    duration: 5 seconds #time taken in seconds to run this test
+    env: qa #valid value are dev, qa, production
+    buildVersion: xxx #mention the build version
+    bug:
+        details:
+                "Multi time bug summary"
+        bugNum: #if bug was reported and filed, report the bug number here
+        
