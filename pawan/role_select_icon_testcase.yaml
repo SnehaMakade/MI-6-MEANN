@@ -5,15 +5,15 @@ feature:
     lastUpdate: "05 June, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "select role for employee button should be present at employee dashboard"
+    summary: "select role for employee button should be present "
     browsers:
         - "Chrome"
     steps:
         - "Go to HR -> EMPLOYEE -> Dashboard"
         - "Check spelling on all text contents"
-        - "Verify that there is there is button for select employee role "
+        - "Verify that there is  button for select employee role "
     conditions:
-        - "Test fails if there is no select role for employee button  "
+        - "Test fails if there is no button for select role  employee button  "
     automation:
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated
@@ -28,4 +28,5 @@ testRun:
         details:
                 "Multi time bug summary"
         bugNum: #if bug was reported and filed, report the bug number here
+        
         

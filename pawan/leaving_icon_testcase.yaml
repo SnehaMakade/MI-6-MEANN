@@ -11,8 +11,7 @@ test:
     steps:
         - "Go to HR -> EMPLOYEE -> Dashboard"
         - "Check spelling on all text contents"
-        - "Change value of records field to 50"
-        - "Verify that there is 50 declarations present at dashboard"
+        - "Verify that there is leaving button should be present"
     conditions:
         - "Test fails if there is no leaving button "
     automation:

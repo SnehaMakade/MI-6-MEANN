@@ -3,16 +3,16 @@ feature:
     name: "Employee dashboard"
     owner: "Pawan Jagtap"
     lastUpdate: "05 june, 2020"
-    status: "test" #valid status are "Being defined", "development", "test", "production"
+    status: "Production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "entry of Employee Id search by search field "
+    summary: "Entry of Employee Id search by search field "
     browsers:
         - "Chrome"
     steps:
         - "Go to HR -> Employee -> Dashboard"
         - "Check spelling on all text contents"
         - "Verify that there is a search field by Name or Email or Employee ID"
-        - "verify that search field work properly, Enter Employee id "
+        - "Verify that search field work properly, Enter Employee id "
     conditions:
         - "Test fails if entry of Employee Id can not search by search field "
     automation:
@@ -29,3 +29,4 @@ testRun:
         details:
                 "Multi time bug summary"
         bugNum: #if bug was reported and filed, report the bug number here
+

@@ -3,7 +3,7 @@ feature:
     name: "Employee dashboard"
     owner: "Pawan Jagtap"
     lastUpdate: "05 june, 2020"
-    status: "test" #valid status are "Being defined", "development", "test", "production"
+    status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
     summary: "Employee Details popup after next button "
     browsers:
@@ -33,3 +33,4 @@ testRun:
         details:
                 "Multi time bug summary"
         bugNum: #if bug was reported and filed, report the bug number here
+        

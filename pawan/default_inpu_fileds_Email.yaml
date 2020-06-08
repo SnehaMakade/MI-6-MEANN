@@ -3,7 +3,7 @@ feature:
     name: "Employee dashboard"
     owner: "Pawan Jagtap"
     lastUpdate: "05 june, 2020"
-    status: "test" #valid status are "Being defined", "development", "test", "production"
+    status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
     summary: "entry of Email search by search field "
     browsers:
@@ -12,7 +12,7 @@ test:
         - "Go to HR -> Employee -> Dashboard"
         - "Check spelling on all text contents"
         - "Verify that there is a search field by Name or Email or Employee ID"
-        - "verify that search field work properly, Enter Email "
+        - "Verify that search field work properly, Enter Email "
     conditions:
         - "Test fails if entry of Email is cannot  search by search field "
     automation:
@@ -29,3 +29,4 @@ testRun:
         details:
                 "Multi time bug summary"
         bugNum: #if bug was reported and filed, report the bug number here
+
