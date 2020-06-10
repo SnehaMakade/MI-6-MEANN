@@ -1,0 +1,33 @@
+testType: e2e #Valid types are unit, e2e, load or failure
+feature:
+    name: "Alumni"
+    owner: "onkar bande"
+    lastUpdate: "9 June, 2020"
+    status: "production" #valid status are "Being defined", "development", "test", "production"
+test:
+    summary: "Add Alumni should open add alumni popup form"
+    browsers:
+        - "Chrome"
+    steps:
+        - "Go to HR -> Alumni"
+        - "Check spelling on all text contents"
+        - "Click on 'Add Alumni' button add alumni popup form should get open"
+        - "Verify that there is Employee id, name, personal email, phone number, joining date, last working date, select gender, date of birth, aadhar number, PAN, Employee type, local address, permanent address, and 'ADD' button is present"
+        - "click on close icon present at right top, popup should get closed from dashboard"
+    conditions:
+        - "Test fails if Add alumni popup form not get opened"
+    automation:
+        status: manual #this test is automated or not
+        testPath: #set this with a valid path if test is automated
+testRun:
+    status: pass #valid status are notRun, pass, fail, sometimeFail
+    date: "9 June, 2020" #set the last when this test was run
+    runBy: onkar #name of the person running this testType
+    duration: 15 seconds #time taken in seconds to run this test
+    env: qa #valid value are dev, qa, production
+    buildVersion: xxx #mention the build version
+    bug:
+        details:
+                "Multi time bug summary"
+        bugNum: #if bug was reported and filed, report the bug number here
+ 
