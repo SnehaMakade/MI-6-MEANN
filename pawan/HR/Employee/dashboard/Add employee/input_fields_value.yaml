@@ -1,0 +1,39 @@
+testType: e2e #Valid types are unit, e2e, load or failure
+feature:
+    name: "Employee dashboard"
+    owner: "Pawan Jagtap"
+    lastUpdate: "05 june, 2020"
+    status: "Production" #valid status are "Being defined", "development", "test", "production"
+test:
+    summary: "Employee dashboard should show input fields for added Employee"
+    browsers:
+        - "Chrome"
+    steps:
+        - "Go to HR -> Employee ->dashboard"
+        - "Check spelling on all text contents"
+        - "Click on 'Add Employee' button, Employee Details popup form should get open"
+        - "Fill all the mandatory fields"
+        - "Verify that calender pop up should be open"
+        - "click on 'next' button in form"
+        - "Employee Bank Details popup should be open"
+        - "Fill all the mandatory fields" 
+        - "Click on 'Add' button in popup form"
+        - "Employee Details should get display at dashboard"
+        - "At dashboard there should be seven input fields present"
+        - "Verify that Id, Name, Email, Manager, Phone Number, Role, Status fields are present at dashboard" 
+    conditions:
+        - "Test fails if Employee dashboard should not show ID , Name, Email, Phone Number, Role , Status"
+    automation:
+        status: manual #this test is automated or not
+        testPath: #set this with a valid path if test is automated
+testRun:
+    status: pass #valid status are notRun, pass, fail, sometimeFail
+    date: "05 june, 2020" #set the last when this test was run
+    runBy: Pawan #name of the person running this testType
+    duration: 15 seconds #time taken in seconds to run this test
+    env: qa #valid value are dev, qa, production
+    buildVersion: xxx #mention the build version
+    bug:
+        details:
+                "Multi time bug summary"
+        bugNum: #if bug was reported and filed, report the bug number here

@@ -1,0 +1,38 @@
+testType: e2e #Valid types are unit, e2e, load or failure
+feature:
+    name: "Employee"
+    owner: "Pawan Jagtap"
+    lastUpdate: "10 June, 2020"
+    status: "production" #valid status are "Being defined", "development", "test", "production"
+test:
+    summary: "select role for employee"
+    browsers:
+        - "Chrome"
+    steps:
+        - "Go to HR -> EMPLOYEE -> Dashboard"
+        - "Check spelling on all text contents"
+        - "Click on 'Add Employee' button, Employee Details popup form should get open"
+        - "Fill all the mandatory fields, click on 'next' button in form" 
+        - "Fill all the mandatory fields, Click on 'Add' button in popup form"
+        - "Employee Details should get display at dashboard"
+        - "Verify that there is there is button for select role for employee"
+        - "click on the select role for employee,Employee Roles popup should get open"
+        - "Verify that there is Finance, HR, Sale buttons are there"
+        - "Verify that there is update button"
+    conditions:
+        - "Test fails if there are no finance, HR, Sale buttons are not there"
+    automation:
+        status: manual #this test is automated or not
+        testPath: #set this with a valid path if test is automated
+testRun:
+    status: pass #valid status are notRun, pass, fail, sometimeFail
+    date: "10 June, 2020" #set the last when this test was run
+    runBy: Pawan #name of the person running this testType
+    duration: 10 seconds #time taken in seconds to run this test
+    env: qa #valid value are dev, qa, production
+    buildVersion: xxx #mention the build version
+    bug:
+        details:
+                "Multi time bug summary"
+        bugNum: #if bug was reported and filed, report the bug number here
+      
