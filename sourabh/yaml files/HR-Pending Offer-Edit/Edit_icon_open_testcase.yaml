@@ -2,29 +2,29 @@ testType: e2e #Valid types are unit, e2e, load or failure
 feature:
     name: "Pending Offer"
     owner: "Sourabh Bhojane"
-    lastUpdate: "05 June, 2020"
+    lastUpdate: "5 June, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "Search by name or email filter should display declarations according to name or email"
+    summary: "Edit button should be present at Pending Offer dashboard"
     browsers:
         - "Chrome"
     steps:
-        - "Go to HR -> Pending Offer"
-        - "Verify that there is an entry for each declaration"
+        - "Go to HR -> Pending offer"
         - "Check spelling on all text contents"
-        - "Click on 'Search By name or email' filter,enter name or email for search"
-        - "Select name or email of added declaration, filter should display selected date declaration at dashboard"
-        - "Verify there should be only selected name or email declaration present at dashboard"
+        - "Click on 'Add Offer' button, Offer For Candidate popup form should get open"
+        - "Fill all the mandatory fields, click on 'Add' button in form" 
+        - "Pending Offer should get display at dashboard"
+        - "Verify that there is edit button present at pending offer dashboard "
     conditions:
-        - "Test fails if search by date filter do not display declarations according to date selected in calender"
+        - "Test fails if there is no edit button present at pending offer dashboard"
     automation:
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated
 testRun:
     status: pass #valid status are notRun, pass, fail, sometimeFail
-    date: "05 June, 2020" #set the last when this test was run
+    date: "5 June, 2020" #set the last when this test was run
     runBy: Sourabh #name of the person running this testType
-    duration: 9 seconds #time taken in seconds to run this test
+    duration: 5 seconds #time taken in seconds to run this test
     env: qa #valid value are dev, qa, production
     buildVersion: xxx #mention the build version
     bug:

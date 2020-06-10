@@ -5,15 +5,20 @@ feature:
     lastUpdate: "5 June, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "Not joined button should be present at pending offer dashboard"
+    summary: "Offer For Candidate details popup should be close"
     browsers:
         - "Chrome"
     steps:
         - "Go to HR -> Pending offer"
         - "Check spelling on all text contents"
-        - "Verify that there is not joined button present at pending offer dashboard "
+        - "Click on 'Add Offer' button, Offer For Candidate popup form should get open"
+        - "Fill all the mandatory fields, click on 'Add' button in form" 
+        - "Pending Offer should get display at dashboard"
+        - "Verify that there is view button present at pending offer dashboard"
+        - "Click on view icon Offer For Candidate popup should be open"
+        - "Click on close icon present at top, popup form should get closed"
     conditions:
-        - "Test fails if there is no  not Joined button present at pending offer dashboard"
+        - "Test fails if popup of Offer For Candidate details should not close"
     automation:
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated

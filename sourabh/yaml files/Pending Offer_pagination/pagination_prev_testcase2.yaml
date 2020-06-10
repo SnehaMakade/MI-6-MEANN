@@ -5,18 +5,18 @@ feature:
     lastUpdate: "05 June, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "Clicked pagination previous button should display previous pages declarations list"
+    summary: "Clicked pagination previous button should display previous pages Pending Offer list"
     browsers:
         - "Chrome"
     steps:
         - "Go to HR -> Pending Offer"
         - "Check spelling on all text contents"
         - "Click on paginations next button"
-        - "Verify that next pages declarations list displayes at dashboard"
+        - "Verify that next pages Pending Offer list displayes at dashboard"
         - "click on paginations previous button"
-        - "Verify declarations list moved to previous page and shows previous pages declarations list"
+        - "Verify Pending Offer list moved to previous page and shows previous pages Pending Offer list"
     conditions:
-        - "Test fails if paginations previous button do not display previous pages declarations list"
+        - "Test fails if paginations previous button do not display previous pages Pending Offer list"
     automation:
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated

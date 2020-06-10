@@ -5,16 +5,16 @@ feature:
     lastUpdate: "05 June, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "Clicked pagination next button should display next pages declarations"
+    summary: "Clicked pagination next button should display next pages Pending Offer"
     browsers:
         - "Chroma"
     steps:
         - "Go to HR -> Pending Offer"
         - "Check spelling on all text contents"
         - "Click on paginations next button"
-        - "Verify that next pages declarations list displayes at dashboard"
+        - "Verify that next pages Pending Offer list displayes at dashboard"
     conditions:
-        - "Test fails if paginations next button do not display next pages declarations"
+        - "Test fails if paginations next button do not display next pages Pending Offer"
     automation:
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated

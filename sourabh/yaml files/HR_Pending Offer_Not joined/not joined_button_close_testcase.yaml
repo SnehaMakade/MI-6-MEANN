@@ -5,15 +5,21 @@ feature:
     lastUpdate: "5 June, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "Edit pending offer button should be present at pending offer dashboard"
+    summary: "Not Joined employee For Candidate Joined popup should close"
     browsers:
         - "Chrome"
     steps:
         - "Go to HR -> Pending offer"
         - "Check spelling on all text contents"
-        - "Verify that there is edit pending offer button present at pending offer dashboard "
+        - "Click on 'Add Offer' button, Offer For Candidate popup form should get open"
+        - "Fill all the mandatory fields, click on 'Add' button in form" 
+        - "Pending Offer should get display at dashboard"
+        - "Verify that there is Not Joined employee button present at pending offer dashboard"
+        - "Click on Not Joined employee For Candidate Not Joined popup should open"
+        - "Verify there are select Candidate name, Not joining date, and 'Not Joined' button is present"
+        - "Click on close icon present at top, popup form should get closed"
     conditions:
-        - "Test fails if there is no edit pending offer button present at pending offer dashboard"
+        - "Test fails Not Joined employee for Candidate Joined popup should close"
     automation:
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated

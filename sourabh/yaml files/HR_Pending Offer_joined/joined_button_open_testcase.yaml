@@ -2,25 +2,27 @@ testType: e2e #Valid types are unit, e2e, load or failure
 feature:
     name: "Pending Offer"
     owner: "Sourabh Bhojane"
-    lastUpdate: "05 June, 2020"
+    lastUpdate: "5 June, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "Record field should show first 10 records of Pending Offer"
+    summary: "Joined Employee button should be present at Pending Offer dashboard"
     browsers:
         - "Chrome"
     steps:
-        - "Go to HR -> Pending Offer"
+        - "Go to HR -> Pending offer"
         - "Check spelling on all text contents"
-        - "Verify default value of records field is set to 10"
-        - "Verify that there is 10 Pending Offer present at dashboard"
+        - "Click on 'Add Offer' button, Offer For Candidate popup form should get open"
+        - "Fill all the mandatory fields, click on 'Add' button in form" 
+        - "Pending Offer should get display at dashboard"
+        - "Verify that there is Joined employee button present at pending offer dashboard "
     conditions:
-        - "Test fails if Pending Offer list is not according to record field value"
+        - "Test fails Joined employee button should not be present at Pending Offer dashboard"
     automation:
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated
 testRun:
     status: pass #valid status are notRun, pass, fail, sometimeFail
-    date: "05 June, 2020" #set the last when this test was run
+    date: "5 June, 2020" #set the last when this test was run
     runBy: Sourabh #name of the person running this testType
     duration: 5 seconds #time taken in seconds to run this test
     env: qa #valid value are dev, qa, production

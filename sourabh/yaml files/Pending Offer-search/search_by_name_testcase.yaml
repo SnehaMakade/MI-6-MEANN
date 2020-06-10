@@ -5,24 +5,18 @@ feature:
     lastUpdate: "05 June, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "pending offer declaration get displayed at dashboard"
+    summary: "Search by name filter should display Pending Offer according to name"
     browsers:
         - "Chrome"
     steps:
         - "Go to HR -> Pending Offer"
+        - "Verify that there is an entry for each Pending Offer"
         - "Check spelling on all text contents"
-        - "Click on 'Add Offer' button, add Offer For Candidate popup form should get open"
-        - "Click on name filed, enter name, personal email, phone number, pan, local address, permanent address"
-        -."Click on offer date, calender popup should be open"
-        -."select date from calender popup"
-        -."Click on joining date, calender popup should be open"
-        -."select date from calender popup"
-        -."Click on select department, should open up user defined dropdown"
-        -."Click on select designation, should open up user defined dropdown"
-        - "Click on 'Add' button in popup form"
-        - "Verify pending offer declaration should get display at dashboard"
+        - "Click on 'Search By name or email' filter,enter name for search"
+        - "Select name of added Pending Offer, filter should display selected name Pending Offer at dashboard"
+        - "Verify there should be only selected name Pending Offer present at dashboard"
     conditions:
-        - "Test fails if pending offer declaration not get displayed at dashboard"
+        - "Test fails if search by name filter do not display Pending Offer according to name"
     automation:
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated
@@ -30,10 +24,11 @@ testRun:
     status: pass #valid status are notRun, pass, fail, sometimeFail
     date: "05 June, 2020" #set the last when this test was run
     runBy: Sourabh #name of the person running this testType
-    duration: 15 seconds #time taken in seconds to run this test
+    duration: 9 seconds #time taken in seconds to run this test
     env: qa #valid value are dev, qa, production
     buildVersion: xxx #mention the build version
     bug:
         details:
                 "Multi time bug summary"
         bugNum: #if bug was reported and filed, report the bug number here
+        

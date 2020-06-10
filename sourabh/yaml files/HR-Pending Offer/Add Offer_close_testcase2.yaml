@@ -2,27 +2,27 @@ testType: e2e #Valid types are unit, e2e, load or failure
 feature:
     name: "Pending Offer"
     owner: "Sourabh Bhojane"
-    lastUpdate: "05 June, 2020"
+    lastUpdate: "05 May, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "Record field should show first 10 records of Pending Offer"
+    summary: "Add Offer should open add Offer candidate popup should close"
     browsers:
         - "Chrome"
     steps:
-        - "Go to HR -> Pending Offer"
+        - "Go to EMPLOYEE -> Pending Offer"
         - "Check spelling on all text contents"
-        - "Verify default value of records field is set to 10"
-        - "Verify that there is 10 Pending Offer present at dashboard"
+        - "Click on 'Add Offer' button, add Offer for candidate popup form should get open"
+        - "Verify there are select Name, personal email, phone number, offer date , joining date, pan, select deparment, select designation, local address, permanent address, and 'Add' button is present"
+        - "Click on close icon present at right top, popup should get closed from dashboard"
     conditions:
-        - "Test fails if Pending Offer list is not according to record field value"
-    automation:
+        - "Test fails if Add Offer should not open add Offer candidate popup should not close"
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated
 testRun:
     status: pass #valid status are notRun, pass, fail, sometimeFail
-    date: "05 June, 2020" #set the last when this test was run
+    date: "05 May, 2020" #set the last when this test was run
     runBy: Sourabh #name of the person running this testType
-    duration: 5 seconds #time taken in seconds to run this test
+    duration: 10 seconds #time taken in seconds to run this test
     env: qa #valid value are dev, qa, production
     buildVersion: xxx #mention the build version
     bug:

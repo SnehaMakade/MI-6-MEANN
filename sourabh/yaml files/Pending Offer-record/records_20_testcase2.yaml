@@ -5,16 +5,16 @@ feature:
     lastUpdate: "05 June, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "Record field should show first 20 records of declarations"
+    summary: "Record field should show first 20 records of Pending Offer"
     browsers:
         - "Chrome"
     steps:
         - "Go to HR -> Pending Offer"
         - "Check spelling on all text contents"
         - "Change value of records field to 20"
-        - "Verify that there is 20 declarations present at dashboard"
+        - "Verify that there is 20 Pending Offer present at dashboard"
     conditions:
-        - "Test fails if declarations list is not according to record field value"
+        - "Test fails if Pending Offer list is not according to record field value"
     automation:
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated

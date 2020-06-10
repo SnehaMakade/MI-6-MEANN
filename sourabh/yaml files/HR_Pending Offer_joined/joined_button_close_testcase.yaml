@@ -5,21 +5,21 @@ feature:
     lastUpdate: "5 June, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "Default pending offer dashboard should show pending offer dashboard"
+    summary: "Joined employee For Candidate Joined popup should close"
     browsers:
         - "Chrome"
     steps:
-        - "Go to HR -> Pending Offer"
-        - "Verify that the default page is pending offer dashboard"
-        - "Verify that left menu declaration is highlighted"
-        - "Verify that there is an entry for each pending offer"
+        - "Go to HR -> Pending offer"
         - "Check spelling on all text contents"
-        - "Verify that 'Add Offer' button is present at top"
-        - "Verify that there is search input field is present at dashboard "
-        - "Verify that there is records dropdown present at dashboard"
-        - "Verify that there is pagination present at dashboard "
+        - "Click on 'Add Offer' button, Offer For Candidate popup form should get open"
+        - "Fill all the mandatory fields, click on 'Add' button in form" 
+        - "Pending Offer should get display at dashboard"
+        - "Verify that there is Joined employee button present at pending offer dashboard"
+        - "Click on Joined employee For Candidate Joined popup should open"
+        - "Verify there are select Candidate name, employee id, company email, joining date, and 'Joined' button is present"
+        - "Click on close icon present at top, popup form should get closed"
     conditions:
-        - "Test fails if Pending Offer dashboard page is not displayed"
+        - "Test fails Joined employee for Candidate Joined popup should not close"
     automation:
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated
@@ -34,3 +34,4 @@ testRun:
         details:
                 "Multi time bug summary"
         bugNum: #if bug was reported and filed, report the bug number here
+        

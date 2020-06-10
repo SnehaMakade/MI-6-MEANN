@@ -5,15 +5,18 @@ feature:
     lastUpdate: "5 June, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "View pending offer details button should be present at pending offer dashboard"
+    summary: "Not Joined button should be present at Pending Offer dashboard"
     browsers:
         - "Chrome"
     steps:
         - "Go to HR -> Pending offer"
         - "Check spelling on all text contents"
-        - "Verify that there is view pending offer details button present at pending offer dashboard "
+        - "Click on 'Add Offer' button, Offer For Candidate popup form should get open"
+        - "Fill all the mandatory fields, click on 'Add' button in form" 
+        - "Pending Offer should get display at dashboard"
+        - "Verify that there is Not Joined employee button present at pending offer dashboard "
     conditions:
-        - "Test fails if there is no view pending offer button present at pending offer dashboard"
+        - "Test fails Not Joined employee button should not be present at Pending Offer dashboard"
     automation:
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated
@@ -21,7 +24,7 @@ testRun:
     status: pass #valid status are notRun, pass, fail, sometimeFail
     date: "5 June, 2020" #set the last when this test was run
     runBy: Sourabh #name of the person running this testType
-    duration: 5 seconds #time taken in seconds to run this test
+    duration: 10 seconds #time taken in seconds to run this test
     env: qa #valid value are dev, qa, production
     buildVersion: xxx #mention the build version
     bug:
