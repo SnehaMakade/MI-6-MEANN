@@ -1,0 +1,32 @@
+testType: e2e #Valid types are unit, e2e, load or failure
+feature:
+    name: "EMPLOYEE"
+    owner: "Ashutosh kumar"
+    lastUpdate: "09 June, 2020"
+    status: "production" #valid status are "Being defined", "development", "test", "production"
+test:
+    summary: "Record field should show first 50 records of declarations"
+    browsers:
+        - "Chromium"
+    steps:
+        - "Go to Hr -> employee ->dashboard"
+        - "Check spelling on all text contents"
+        - "Change value of records field to 50"
+        - "Verify that there is 50 declarations present at dashboard"
+    conditions:
+        - "Test fails if declarations list is not according to record field value"
+    automation:
+        status: manual #this test is automated or not
+        testPath: #set this with a valid path if test is automated
+testRun:
+    status: pass #valid status are notRun, pass, fail, sometimeFail
+    date: "09 June, 2020" #set the last when this test was run
+    runBy:Ashutosh kumar #name of the person running this testType
+    duration: 7 seconds #time taken in seconds to run this test
+    env: qa #valid value are dev, qa, production
+    buildVersion: xxx #mention the build version
+    bug:
+        details:
+                "Multi time bug summary"
+        bugNum: #if bug was reported and filed, report the bug number here
+        
