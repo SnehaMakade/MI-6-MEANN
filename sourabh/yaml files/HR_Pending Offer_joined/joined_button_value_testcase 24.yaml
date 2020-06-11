@@ -17,9 +17,10 @@ test:
         - "Verify that there is Joined employee button present at pending offer dashboard"
         - "Click on Joined employee For Candidate Joined popup should open"
         - "Click there are select Candidate name, employee id, company email, joining date"
-        -."Click on 'joined' button in popup form"
-        -."Go to HR -> Employee"
-        -."Verify that ther is recently added joined employee details present at employee dashboard"
+        - "verify that calander popup should be open"
+        - "Click on 'joined' button in popup form"
+        - "Go to HR -> Employee"
+        - "Verify that ther is recently added joined employee details present at employee dashboard"
     conditions:
         - "Test fails Joined employee not get display at employee dashboard"
     automation:

@@ -16,6 +16,7 @@ test:
         - "Pending Offer should get display at dashboard"
         - "Verify that there is edit button present at pending offer dashboard "
         - "Verify that all details are present as the record"
+        - "Verify that calander popup should be open"
         - "Do some changes in the field's and click on update button"
         - "Verify that all updated values are changed"
     conditions:
