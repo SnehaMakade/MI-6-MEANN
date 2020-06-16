@@ -5,7 +5,7 @@ feature:
     lastUpdate: "5 June, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "Joined Employee button should be present at Pending Offer dashboard"
+    summary: "Joined Employee icon should be present at Pending Offer dashboard"
     browsers:
         - "Chrome"
     steps:
