@@ -5,7 +5,7 @@ feature:
     lastUpdate: "10 June, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "select role for employee"
+    summary: "select role for employee button should be present at employee dashboard"
     browsers:
         - "Chrome"
     steps:
@@ -13,14 +13,13 @@ test:
         - "Check spelling on all text contents"
         - "Click on 'Add Employee' button, Employee Details popup form should get open"
         - "Fill all the mandatory fields, click on 'next' button in form" 
+        - "Verify that Employee bank details popup should get open"
         - "Fill all the mandatory fields, Click on 'Add' button in popup form"
         - "Employee Details should get display at dashboard"
-        - "Verify that there is there is button for select role for employee"
-        - "click on the select role for employee,Employee Roles popup should get open"
-        - "Verify that there is Finance, HR, Sale buttons are there"
-        - "Verify that there is update button"
+        - "Verify that there is select role for employee icon is present at employee dashboard"
+        - "Click on the select role for employee icon, Employee Roles popup should get open"
     conditions:
-        - "Test fails if there are no finance, HR, Sale buttons are not there"
+        - "Test fails if Employee Roles popup is not open"
     automation:
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated
@@ -35,4 +34,4 @@ testRun:
         details:
                 "Multi time bug summary"
         bugNum: #if bug was reported and filed, report the bug number here
-      
+        

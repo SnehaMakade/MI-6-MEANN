@@ -5,7 +5,7 @@ feature:
     lastUpdate: "10 June, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "Leaving employee popup should open"
+    summary: "view button should open a popup of employee details"
     browsers:
         - "Chrome"
     steps:
@@ -13,12 +13,13 @@ test:
         - "Check spelling on all text contents"
 	    - "Click on 'Add Employee' button, Employee Details popup form should get open"
         - "Fill all the mandatory fields, click on 'next' button in form" 
+        - "Verify that Employee bank details popup should get open"
         - "Fill all the mandatory fields, Click on 'Add' button in popup form"
         - "Employee Details should get display at dashboard"
-        - "Verify that there is leaving button should be there"
-        - "Click on leaving button, Leaving Employee popup should get open"
+        - "Verify that there is view icon on employee dashboard"
+        - "Click on view icon employee details popup should be open"
     conditions:
-        - "Test fails if leaving employee popup is not open"
+        - "Test fails if employee details popup should not popup open"
     automation:
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated
@@ -26,7 +27,7 @@ testRun:
     status: pass #valid status are notRun, pass, fail, sometimeFail
     date: "10 June, 2020" #set the last when this test was run
     runBy: Pawan #name of the person running this testType
-    duration: 13 seconds #time taken in seconds to run this test
+    duration: 14 seconds #time taken in seconds to run this test
     env: qa #valid value are dev, qa, production
     buildVersion: xxx #mention the build version
     bug:

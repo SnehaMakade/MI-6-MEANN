@@ -1,19 +1,21 @@
 testType: e2e #Valid types are unit, e2e, load or failure
 feature:
-    name: "Empolyee dashboard"
+    name: "Employee dashboard"
     owner: "Pawan Jagtap"
     lastUpdate: "05 june, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "Employee Details popup should be open"
+    summary: "Entry of Name search by search field "
     browsers:
         - "Chrome"
     steps:
         - "Go to HR -> Employee -> Dashboard"
         - "Check spelling on all text contents"
-        - "Click on 'Add Employee' button, Employee Details popup form should get open"
+        - "Verify that there is a search field by Name"
+        - "Click on search by, enter name of employee"
+        - "Verify that search field work properly"
     conditions:
-        - "Test fails if Employee Details popup not open "
+        - "Test fails if entry of Name can not search by search field"
     automation:
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated

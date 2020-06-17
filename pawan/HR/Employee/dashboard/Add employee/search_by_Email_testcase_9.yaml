@@ -5,16 +5,17 @@ feature:
     lastUpdate: "05 june, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "Entry of Name search by search field "
+    summary: "entry of Email search by search field "
     browsers:
         - "Chrome"
     steps:
         - "Go to HR -> Employee -> Dashboard"
         - "Check spelling on all text contents"
-        - "Verify that there is a search field by Name or Email or Employee ID"
-        - "Verify that search field work properly, Enter a Employee Name "
+        - "Verify that there is a search field by Email"
+        - "Click on search by, enter a email id"
+        - "Verify that search field work properly"
     conditions:
-        - "Test fails if entry of Name can not search by search field "
+        - "Test fails if entry of Email is cannot  search by search field "
     automation:
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated

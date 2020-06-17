@@ -5,7 +5,7 @@ feature:
     lastUpdate: "10 June, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "Employee details popup should close"
+    summary: "Employee details popup should get close"
     browsers:
         - "Chrome"
     steps:
@@ -13,13 +13,14 @@ test:
         - "Check spelling on all text contents"
 	    - "Click on 'Add Employee' button, Employee Details popup form should get open"
         - "Fill all the mandatory fields, click on 'next' button in form" 
+        - "Verify that Employee bank details popup should get open"
         - "Fill all the mandatory fields, Click on 'Add' button in popup form"
         - "Employee Details should get display at dashboard"
-        - "Verify that there is view icon on employee dashboard"
-        - "Click on view icon, employee detail's popup should be open"
-	    - "Click on close icon present at top, popup form should get closed"        
+        - "Verify that there is edit icon present at employee dashboard"
+        - "Click on edit icon, Employee Details popup should get open"
+	    - "Click on close icon present at top, popup form should get closed"
     conditions:
-        - "Test fails if popup of employee details should not close"
+        - "Test fails if employee details popup should not close"
     automation:
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated
