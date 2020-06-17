@@ -5,18 +5,18 @@ feature:
     lastUpdate: "09 June, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "Search by email filter should display alumni employee according to email entered in search field"
+    summary: "Click on view icon alumni employee popup form should display all values with correct allignment"
     browsers:
         - "Chrome"
     steps:
         - "Go to HR -> Alumni"
-        - "Verify that there is an entry for each alumni employee"
         - "Check spelling on all text contents"
-        - "Click on search by email or name filter"
-        - "Enter alumni employee email to search entered alumni employee"
-        - "Verify that there should be only entered email alumni employee present at dashboard"
-    Condition:
-        - "Test fails if search by email filter do not display alumni employee according to email entered in search field"
+        - "Click on 'Add Alumni' button, and popup form should get open"
+        - "Fill all mandatory fields in add alumni popup then click on 'Add' button in popup alumni employee detail should display"
+        - "Click on view icon alumni employee detail popup form should open"
+        - "Verify id, name, personal email, phone, joining date, leaving date, gender, dob, pan, aadhar, employee type, permanent address, local address are displaying in form"
+    conditions:
+        - "Test fails if clicked view icon alumni employee detail popup form should not display all values with correct allignment"
     automation:
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated
@@ -24,11 +24,11 @@ testRun:
     status: pass #valid status are notRun, pass, fail, sometimeFail
     date: "09 June, 2020" #set the last when this test was run
     runBy: onkar #name of the person running this testType
-    duration: 15 seconds #time taken in seconds to run this test
+    duration: 5 seconds #time taken in seconds to run this test
     env: qa #valid value are dev, qa, production
     buildVersion: xxx #mention the build version
     bug:
         details:
                 "Multi time bug summary"
         bugNum: #if bug was reported and filed, report the bug number here
-        
+            

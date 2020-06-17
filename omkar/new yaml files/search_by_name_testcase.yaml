@@ -12,7 +12,7 @@ test:
         - "Go to HR -> Alumni"
         - "Verify that there is an entry for each alumni employee"
         - "Check spelling on all text contents"
-        - "Click on search by name,email filter"
+        - "Click on search by name or email filter"
         - "Enter alumni employee name to search entered alumni employee"
         - "Verify that there should be only entered name alumni employee present at dashboard"
     Condition:

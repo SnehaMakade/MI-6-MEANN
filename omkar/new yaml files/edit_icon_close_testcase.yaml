@@ -11,6 +11,7 @@ test:
     steps:
         - "Go to HR -> Alumni"
         - "Check spelling on all text contents"
+        - "Click on 'Add Alumni' button, and popup form should get open"
         - "Fill all mandatory fields in add alumni popup then click on 'Add' button in popup form"
         - "Verify added alumni employee detail should display at dashboard"
         - "Click on edit icon, it should open alumni employee details popup form"

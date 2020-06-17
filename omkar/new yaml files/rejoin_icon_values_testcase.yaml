@@ -11,9 +11,11 @@ test:
     steps:
         - "Go to HR -> Alumni"
         - "Check spelling on all text contents"
+        - "Click on 'Add Alumni' button, and popup form should get open"
         - "Fill all mandatory fields in add alumni popup then click on 'Add' button in popup form"
         - "Alumni employee detail should display at dashboard"
         - "Verify rejoin alumni employee popup should show input fields candidate name, employee id, company email, joining date, employee type and 'Rejoin' button is present"
+        - "Verify candidate rejoined popup form should display candidate name with already filled name"
         - "Fill all mandatory fields in popup form"
         - "Click on 'Rejoin' button at popup form"
         - "Verify all alumni employee details should be display at employee dashboard"

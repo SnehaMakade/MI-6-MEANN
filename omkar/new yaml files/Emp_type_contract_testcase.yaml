@@ -11,6 +11,7 @@ test:
     steps:
         - "Go to HR -> Alumni"
         - "Check spelling on all text contents"
+        - "Click on 'Add Alumni' button, and popup form should get open"
         - "Check employee type 'contractual' is selected in popup form"
         - "Check that adding all mandatory field and press 'Add' button then displayes selected values in view alumni employee"
     conditions:

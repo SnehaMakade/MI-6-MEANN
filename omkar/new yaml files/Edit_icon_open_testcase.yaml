@@ -11,9 +11,10 @@ test:
     steps:
         - "Go to HR -> Alumni"
         - "Check spelling on all text contents"
+        - "Click on 'Add Alumni' button, and popup form should get open"
         - "Fill all mandatory fields in add alumni popup then click on 'Add' button in popup alumni employee detail should display"
-        - "click on edit icon it should open alumni employee detail popup form"
-        - "verify in entry for alumni employee there is edit alumni employee popup is open"
+        - "Click on edit icon it should open alumni employee detail popup form"
+        - "Verify in entry for alumni employee there is edit alumni employee popup is open"
     conditions:
         - "Test fails if clicked edit icon alumni employee detail popup should not open"
     automation:

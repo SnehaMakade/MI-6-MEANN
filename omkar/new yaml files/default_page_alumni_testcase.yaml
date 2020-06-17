@@ -10,14 +10,14 @@ test:
         - "Chrome"
     steps:
         - "Go to HR -> Alumni"
-        - "verify that the default page is Alumni dashboard"
-        - "verify that left menu Alumni is highlighted"
-        - "verify that there is an entry for each alumni employee"
-        - "check spelling on all text contents"
-        - "verify that add alumni button is present at top"
-        - "verify that there is search input field is present at dashboard"
-        - "verify that record dropdown is present at dashboard"
-        - "verify that pagination present at dashboard"
+        - "Verify that the default page is Alumni dashboard"
+        - "Verify that left menu Alumni is highlighted"
+        - "Verify that there is an entry for each alumni employee"
+        - "Check spelling on all text contents"
+        - "Verify that add alumni button is present at top"
+        - "Verify that there is search input field is present at dashboard"
+        - "Verify that record dropdown is present at dashboard"
+        - "Verify that pagination present at dashboard"
     Condition:
         - "Test fails if default Alumni dashboard page is not displayed"
     automation:

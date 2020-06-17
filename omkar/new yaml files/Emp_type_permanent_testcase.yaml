@@ -11,8 +11,9 @@ test:
     steps:
         - "Go to HR -> Alumni"
         - "Check spelling on all text contents"
+        - "Click on 'Add Alumni' button, and popup form should get open"
         - "Verify by default employee type 'permanent' is selected in popup form"
-        - "Verify that adding all mandatory field and press 'Add' button then displayes selected values in view alumni emplyee"
+        - "Verify that adding all mandatory field and press 'Add' button then displayes selected values in view alumni employee"
     conditions:
         - "Test fails if employee type 'permanent' do not show default value at add alumni employee popup"
     automation:

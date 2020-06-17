@@ -14,9 +14,9 @@ test:
         - "Click on 'Add Alumni' button, and popup form should get open"
         - "Fill all the mandatory fields, click on 'Add' button in popup form alumni employee details should get displayed at dashboard"
         - "At dashboard there should be five input fields present"
-        - "Verify ID, Name, Email, Phone, Last working date are present at dashboard"
+        - "Verify id, name, email, phone, last working date are present at dashboard"
     Condition:
-        - "Test fails if ID, Name, Email, Phone, Last working date are not display at dashboard after adding alumni employee"
+        - "Test fails if id, name, email, phone, last working date are not display at dashboard after adding alumni employee"
     automation:
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated
