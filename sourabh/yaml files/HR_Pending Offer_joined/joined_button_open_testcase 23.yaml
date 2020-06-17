@@ -5,18 +5,18 @@ feature:
     lastUpdate: "5 June, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "Joined Employee icon should be present at Pending Offer dashboard"
+    summary: "Joined employee icon should be present at pending offer dashboard"
     browsers:
         - "Chrome"
     steps:
         - "Go to HR -> Pending offer"
         - "Check spelling on all text contents"
-        - "Click on 'Add Offer' button, Offer For Candidate popup form should get open"
+        - "Click on 'Add Offer' button, offer for candidate popup form should get open"
         - "Fill all the mandatory fields, click on 'Add' button in form" 
-        - "Pending Offer should get display at dashboard"
-        - "Verify that there is Joined employee button present at pending offer dashboard "
+        - "Pending offer should get display at dashboard"
+        - "Verify that there is joined employee icon present at pending offer dashboard "
     conditions:
-        - "Test fails Joined employee button should not be present at Pending Offer dashboard"
+        - "Test fails Joined employee icon should not be present at Pending Offer dashboard"
     automation:
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated

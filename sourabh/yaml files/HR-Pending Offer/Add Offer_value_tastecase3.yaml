@@ -6,18 +6,18 @@ feature:
     lastUpdate: "05 June, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "pending offer get displayed at dashboard"
+    summary: "Pending offer get displayed at dashboard"
     browsers:
         - "Chrome"
     steps:
         - "Go to HR -> Pending Offer"
         - "Check spelling on all text contents"
-        - "Click on 'Add Offer' button, add Offer For Candidate popup form should get open"
+        - "Click on 'Add Offer' button, add offer for candidate popup form should get open"
         - "Click on name filed, enter name, personal email, phone number, pan, local address, permanent address"
         -."Click on offer date, calender popup should be open"
-        -."select date from calender popup"
+        -."Select date from calender popup"
         -."Click on joining date, calender popup should be open"
-        -."select date from calender popup"
+        -."Select date from calender popup"
         -."Click on select department, should open up user defined dropdown"
         -."Click on select designation, should open up user defined dropdown"
         - "Click on 'Add' button in popup form"

@@ -5,16 +5,16 @@ feature:
     lastUpdate: "05 June, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "Record field should show first 10 records of Pending Offer"
+    summary: "Record field should show first 10 records of pending offer"
     browsers:
         - "Chrome"
     steps:
         - "Go to HR -> Pending Offer"
         - "Check spelling on all text contents"
         - "Verify default value of records field is set to 10"
-        - "Verify that there is 10 Pending Offer present at dashboard"
+        - "Verify that there is 10 pending offer present at dashboard"
     conditions:
-        - "Test fails if Pending Offer list is not according to record field value"
+        - "Test fails if pending offer list is not according to record field value"
     automation:
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated

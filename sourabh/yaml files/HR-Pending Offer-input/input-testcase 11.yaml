@@ -5,7 +5,7 @@ feature:
     lastUpdate: "05 June, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "Pending Offer should show input fields for added offer"
+    summary: "Pending offer should show input fields for added offer"
     browsers:
         - "Chrome"
     steps:
@@ -16,7 +16,7 @@ test:
         - "At dashboard there should be five input fields present"
         - "Verify Name, Email, Phone, Offer Date, Joining Date fields are present at dashboard"
     conditions:
-        - "Test fails if Name, Email, Phone, Offer Date, Joining Date are not display at dashboard after adding offer"
+        - "Test fails if name, email, phone, offer date, joining date are not display at dashboard after adding offer"
     automation:
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated

@@ -5,24 +5,24 @@ feature:
     lastUpdate: "5 June, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "Joined employee get display at employee dashboard"
+    summary: "Joined employee icon get display at employee dashboard"
     browsers:
         - "Chrome"
     steps:
         - "Go to HR -> Pending offer"
         - "Check spelling on all text contents"
-        - "Click on 'Add Offer' button, Offer For Candidate popup form should get open"
+        - "Click on 'Add Offer' button, offer for candidate popup form should get open"
         - "Fill all the mandatory fields, click on 'Add' button in form" 
-        - "Pending Offer should get display at dashboard"
-        - "Verify that there is Joined employee button present at pending offer dashboard"
-        - "Click on Joined employee For Candidate Joined popup should open"
-        - "Click there are select Candidate name, employee id, company email, joining date"
-        - "verify that calander popup should be open"
+        - "Pending offer should get display at dashboard"
+        - "Verify that there is joined employee icon present at pending offer dashboard"
+        - "Click on joined employee icon For candidate joined popup should open"
+        - "Click there are select candidate name, employee id, company email, joining date"
+        - "Verify that calander popup should be open"
         - "Click on 'joined' button in popup form"
         - "Go to HR -> Employee"
         - "Verify that ther is recently added joined employee details present at employee dashboard"
     conditions:
-        - "Test fails Joined employee not get display at employee dashboard"
+        - "Test fails joined employee icon not get display at employee dashboard"
     automation:
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated

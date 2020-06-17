@@ -5,20 +5,20 @@ feature:
     lastUpdate: "5 June, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "Offer For Candidate details popup should be close"
+    summary: "Offer for candidate details popup should be close"
     browsers:
         - "Chrome"
     steps:
         - "Go to HR -> Pending offer"
         - "Check spelling on all text contents"
-        - "Click on 'Add Offer' button, Offer For Candidate popup form should get open"
+        - "Click on 'Add Offer' button, offer for candidate popup form should get open"
         - "Fill all the mandatory fields, click on 'Add' button in form" 
-        - "Pending Offer should get display at dashboard"
-        - "Verify that there is view button present at pending offer dashboard"
-        - "Click on view icon Offer For Candidate popup should be open"
+        - "Pending offer should get display at dashboard"
+        - "Verify that there is view icon present at pending offer dashboard"
+        - "Click on view icon offer for candidate popup should be open"
         - "Click on close icon present at top, popup form should get closed"
     conditions:
-        - "Test fails if popup of Offer For Candidate details should not close"
+        - "Test fails if popup of offer for candidate details should not close"
     automation:
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated

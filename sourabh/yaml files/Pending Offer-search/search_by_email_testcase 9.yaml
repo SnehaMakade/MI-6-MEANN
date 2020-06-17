@@ -5,18 +5,18 @@ feature:
     lastUpdate: "05 June, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "Search by email filter should display Pending Offer according to email"
+    summary: "Search by email filter should display pending offer according to email"
     browsers:
         - "Chrome"
     steps:
         - "Go to HR -> Pending Offer"
-        - "Verify that there is an entry for each Pending Offer"
+        - "Verify that there is an entry for each pending offer"
         - "Check spelling on all text contents"
-        - "Click on 'Search By name or email' filter,enter email for search"
-        - "Select email of added Pending Offer, filter should display selected email Pending Offer at dashboard"
-        - "Verify there should be only selected email Pending Offer present at dashboard"
+        - "Click on 'search by name or email' filter,enter email for search"
+        - "Select email of added pending offer, filter should display selected email Pending Offer at dashboard"
+        - "Verify there should be only selected email pending offer present at dashboard"
     conditions:
-        - "Test fails if search by email filter do not display Pending Offer according to email"
+        - "Test fails if search by email filter do not display pending offer according to email"
     automation:
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated

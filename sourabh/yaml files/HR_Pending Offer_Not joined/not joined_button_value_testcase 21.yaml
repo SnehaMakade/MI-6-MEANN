@@ -5,7 +5,7 @@ feature:
     lastUpdate: "5 June, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "Not Joined employee get display at Not Joined dashboard"
+    summary: "Not joined icon get display at not joined dashboard"
     browsers:
         - "Chrome"
     steps:
@@ -13,16 +13,16 @@ test:
         - "Check spelling on all text contents"
         - "Click on 'Add Offer' button, Offer For Candidate popup form should get open"
         - "Fill all the mandatory fields, click on 'Add' button in form" 
-        - "Pending Offer should get display at dashboard"
-        - "Verify that there is Not Joined employee button present at pending offer dashboard"
-        - "Click on Not Joined employee, Candidate Not Joined popup should open"
-        - "Verify there are select Candidate name, Not joining date"
+        - "Pending offer should get display at dashboard"
+        - "Verify that there is not joined employee icon present at pending offer dashboard"
+        - "Click on not joined employee, candidate not joined popup should open"
+        - "Verify there are select candidate name, not joining date"
         - "Verify that calander popup should be open"
         -."Click on 'Not joined' button in popup form"
         -."Go to HR -> Not Joined"
         -."Verify that there is recently added not joined employee details present at employee dashboard"
     conditions:
-        - "Test fails Not Joined employee not get display at employee dashboard"
+        - "Test fails not joined employee not get display at employee dashboard"
     automation:
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated

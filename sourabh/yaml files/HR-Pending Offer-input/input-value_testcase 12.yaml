@@ -14,7 +14,7 @@ test:
         - "Click on 'Add Offer' button, add offer popup form should get open"
         - "Fill all the mandatory fields, click on 'Add' button in popup form, pending offer should get display at dashboard"
         - "At dashboard there should be five input fields present"
-        - "Verify Name, Email, Phone, Offer Date, Joining Date fields are present at dashboard"
+        - "Verify name, email, phone, offer date, joining date fields are present at dashboard"
         - "Verify added name should get display below name field"
         - "Verify added email should get display below email field"
         - "Verify added phone should get display below phone field"

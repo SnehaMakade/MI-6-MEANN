@@ -5,17 +5,17 @@ feature:
     lastUpdate: "05 May, 2020"
     status: "production" #valid status are "Being defined", "development", "test", "production"
 test:
-    summary: "Add Offer should open add Offer candidate popup should close"
+    summary: "Add offer should open add offer candidate popup should close"
     browsers:
         - "Chrome"
     steps:
         - "Go to EMPLOYEE -> Pending Offer"
         - "Check spelling on all text contents"
-        - "Click on 'Add Offer' button, add Offer for candidate popup form should get open"
-        - "Verify there are select Name, personal email, phone number, offer date , joining date, pan, select deparment, select designation, local address, permanent address, and 'Add' button is present"
+        - "Click on 'Add Offer' button, add offer for candidate popup form should get open"
+        - "Verify there are select name, personal email, phone number, offer date, joining date, pan, select deparment, select designation, local address, permanent address, and 'Add' button is present"
         - "Click on close icon present at right top, popup should get closed from dashboard"
     conditions:
-        - "Test fails if Add Offer should not open add Offer candidate popup should not close"
+        - "Test fails if Add Offer should not open add offer candidate popup should not close"
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated
 testRun:

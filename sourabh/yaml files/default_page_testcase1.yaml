@@ -19,7 +19,7 @@ test:
         - "Verify that there is records dropdown present at dashboard"
         - "Verify that there is pagination present at dashboard "
     conditions:
-        - "Test fails if Pending Offer dashboard page is not displayed"
+        - "Test fails if pending offer dashboard page is not displayed"
     automation:
         status: manual #this test is automated or not
         testPath: #set this with a valid path if test is automated
