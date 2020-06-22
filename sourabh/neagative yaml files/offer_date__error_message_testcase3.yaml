@@ -1,0 +1,36 @@
+testType: e2e #Valid types are unit, e2e, load or failure
+feature:
+    name: "Pending Offer"
+    owner: "Sourabh Bhojane"
+    lastUpdate: "06 June, 2020"
+    status: "production" #valid status are "Being defined", "development", "test", "production"
+test:
+    summary: "Offer date field should display error message for blank and wrong value"
+    browsers: 
+        - "Chrome"
+    steps:
+        - "Go to HR -> Pending Offer"
+        - "Click on 'Add Offer' button, offer for candidate popup should get open"
+        - "Do not fill offer date field"
+        - "Click on another field"
+        - "Verify error message 'This field is required. Date format should be DD/MM/YYYY.' should get display"
+        - "Fill alphabets in offer date field"
+        - "Verify error message should display and it should not enter alphabets in no. of leaves field"
+        - "Fill numbers in offer date field"
+        - "Verify error message should not display"
+    conditions:
+        - "Test fails if offer date field do not display error message for blank and wrong value"
+    automation:
+        status: manual #this test is automated or not
+        testPath: #set this with a valid path if test is automated
+testRun:
+    status: pass #valid status are notRun, pass, fail, sometimeFail
+    date: "06 June, 2020" #set the last when this test was run
+    runBy: Sourabh #name of the person running this testType
+    duration: 10 seconds #time taken in seconds to run this test
+    env: qa #valid value are dev, qa, production
+    buildVersion: xxx #mention the build version
+    bug:
+        details:
+                "Multi time bug summary"
+        bugNum: #if bug was reported and filed, report the bug number here
