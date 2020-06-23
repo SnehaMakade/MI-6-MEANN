@@ -1,0 +1,31 @@
+testType: e2e #Valid types are unit, e2e, load or failure
+feature:
+    name: "Employee"
+    owner: "Pawan Jagtap"
+    lastUpdate: "05 June, 2020"
+    status: "production" #valid status are "Being defined", "development", "test", "production"
+test:
+    summary: "Clicked pagination next button should display next pages of Employee dashboard"
+    browsers:
+        - "Chrome"
+    steps:
+        - "Go to HR -> Employee -> Dashboard"
+        - "Check spelling on all text contents"
+        - "Click on pagination's next button"
+        - "Verify that next pages Employee details list display's at dashboard"
+    conditions:
+        - "Test fails if pagination's next button do not display next pages of employee dashboard"
+    automation:
+        status: manual #this test is automated or not
+        testPath: #set this with a valid path if test is automated
+testRun:
+    status: pass #valid status are notRun, pass, fail, sometimeFail
+    date: "05 June, 2020" #set the last when this test was run
+    runBy: Pawan #name of the person running this testType
+    duration: 5 seconds #time taken in seconds to run this test
+    env: qa #valid value are dev, qa, production
+    buildVersion: xxx #mention the build version
+    bug:
+        details:
+                "Multi time bug summary"
+        bugNum: #if bug was reported and filed, report the bug number here
