@@ -1,0 +1,35 @@
+testType: e2e #Valid types are unit, e2e, load or failure
+feature:
+    name: "Employee"
+    owner: "Sourabh Bhojane"
+    lastUpdate: "24 June, 2020"
+    status: "production" #valid status are "Being defined", "development", "test", "production"
+test:
+    summary: "Click on close icon should close view designation details popup form"
+browsers:
+        - "Chrome"
+    steps:
+        - "Go to HR -> Employee -> Designation"
+        - "Check spelling on all text contents"
+        - "Click on 'Add Designation' button it should open designation details popup form
+        - "Fill all mandatory field click on 'Add' button"
+        - "Verify entered designation details should be added"
+        - "Click on view icon, view designation details popup form should get open"
+        - "Click on close icon present at right top, popup should get closed from dashboard"
+    conditions:
+        - "Test fails if click on close icon should not close view designation details popup form"
+    automation:
+        status: manual #this test is automated or not
+        testPath: #set this with a valid path if test is automated
+testRun:
+    status: pass #valid status are notRun, pass, fail, sometimeFail
+    date: "24 June, 2020" #set the last when this test was run
+    runBy: Sourabh #name of the person running this testType
+    duration: 8 seconds #time taken in seconds to run this test
+    env: qa #valid value are dev, qa, production
+    buildVersion: xxx #mention the build version
+    bug:
+        details:
+                "Multi time bug summary"
+        bugNum: #if bug was reported and filed, report the bug number here
+        

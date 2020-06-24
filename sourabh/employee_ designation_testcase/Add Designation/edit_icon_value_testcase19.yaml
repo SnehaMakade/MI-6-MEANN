@@ -1,0 +1,38 @@
+testType: e2e #Valid types are unit, e2e, load or failure
+feature:
+    name: "Employee"
+    owner: "Sourabh Bhojane"
+    lastUpdate: "24 June, 2020"
+    status: "production" #valid status are "Being defined", "development", "test", "production"
+test:
+    summary: "Designation details should get display at dashboard with updated values"
+    browsers:
+        - "Chrome"
+    steps:
+        - "Go to HR -> Employee -> Designation"
+        - "Check spelling on all text contents"
+        - "Click on 'Add Designation' button it should open designation details popup form
+        - "Fill all mandatory field click on 'Add' button"
+        - "Verify entered designation details should be added"
+        - "Click on edit icon, edit designation details popup form should get open"
+        - "Verify designation details popup form should display allready filled values"
+        - "Change some of field"
+        - "Click on 'Update' button in designation detail popup form"
+        - "Designation detail popup form should get closed and designation detail list should display updated value"
+    conditions:
+        - "Test fails if designation detail should not display at dashboard with updated values"
+    automation:
+        status: manual #this test is automated or not
+        testPath: #set this with a valid path if test is automated
+testRun:
+    status: pass #valid status are notRun, pass, fail, sometimeFail
+    date: "24 June, 2020" #set the last when this test was run
+    runBy: Sourabh #name of the person running this testType
+    duration: 15 seconds #time taken in seconds to run this test
+    env: qa #valid value are dev, qa, production
+    buildVersion: xxx #mention the build version
+    bug:
+        details:
+                "Multi time bug summary"
+        bugNum: #if bug was reported and filed, report the bug number here
+        
