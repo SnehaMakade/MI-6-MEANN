@@ -1,0 +1,36 @@
+testType: e2e #valid types are unit, e2e, load or failure
+feature:
+    name: "Employee"
+    owner: "Onkar Bande"
+    lastUpdate: "23 June, 2020"
+    status: "production" #valid status are "Being defined", "development", "test", "production"
+test:
+    summary: "Department dashboard page is displayed at dashboard"
+    browsers:
+        - "Chrome"
+    steps:
+        - "Go to HR -> Employee -> Department"
+        - "Verify that the page department dashboard should show dashboard"
+        - "Verify that left menu department is highlighted"
+        - "Check spelling on all text contents"
+        - "Verify deapartment, department code, no of employee field present at dashboard"
+        - "Verify 'Add department' button present at dashboard"
+        - "Verify that there is search by name is present at dashboard"
+        - "Verify that there is records dropdown present at dashboard"
+        - "Verify that there is pagination present at dashboard"
+    conditions:
+        - "Test fails if department dashboard page is not displayed"
+    automation:
+        status: manual #this test is automated or not
+        testPath: #set this with a valid path if test is automated
+testRun:
+    status: pass #valid status are notRun, pass, fail, sometimeFail
+    date: "23 June, 2020" #set the last when this test was run
+    runBy: onkar #name of the person running this testType
+    duration: 8 seconds #time taken in seconds to run this test
+    env: qa #valid value are dev, qa, production
+    buildVersion: xxx #mention the build version
+    bug:
+        details:
+                "Multi time bug summary"
+        bugNum: #if bug was reported and filed, report the bug number here

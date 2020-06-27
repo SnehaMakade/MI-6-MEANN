@@ -1,0 +1,38 @@
+testType: e2e #valid types are unit, e2e, load or failure
+feature:
+    name: "Employee"
+    owner: "Onkar Bande"
+    lastUpdate: "23 June, 2020"
+    status: "production" #valid status are "Being defined", "development", "test", "production"
+test:
+    summary: "department details should get display at dashboard with updated values"
+    browsers:
+        - "Chrome"
+    steps:
+        - "Go to HR -> Employee -> Department"
+        - "Check spelling on all text contents"
+        - "Click on 'Add Department' button it should open department details popup form
+        - "Fill all mandatory field click on 'Add' button"
+        - "Verify entered department details should be added"
+        - "Click on edit icon, edit department details popup form should get open"
+        - "Verify department details popup form should display allready filled values"
+        - "Change some of field"
+        - "Click on 'Update' button in department detail popup form"
+        - "Department detail popup form should get closed and department detail list should display updated value"
+    conditions:
+        - "Test fails if department detail should not display at dashboard with updated values"
+    automation:
+        status: manual #this test is automated or not
+        testPath: #set this with a valid path if test is automated
+testRun:
+    status: pass #valid status are notRun, pass, fail, sometimeFail
+    date: "23 June, 2020" #set the last when this test was run
+    runBy: onkar #name of the person running this testType
+    duration: 8 seconds #time taken in seconds to run this test
+    env: qa #valid value are dev, qa, production
+    buildVersion: xxx #mention the build version
+    bug:
+        details:
+                "Multi time bug summary"
+        bugNum: #if bug was reported and filed, report the bug number here
+

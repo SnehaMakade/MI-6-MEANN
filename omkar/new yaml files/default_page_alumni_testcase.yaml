@@ -1,0 +1,36 @@
+testType: e2e #valid types are unit, e2e, load or failure
+feature:
+    name: "Alumni"
+    owner: "Onkar Bande"
+    lastUpdate: "9 June, 2020"
+    status: "production" #valid status are "Being defined", "development", "test", "production"
+test:
+    summary: "Default Alumni dashboard should show dashboard"
+    browsers:
+        - "Chrome"
+    steps:
+        - "Go to HR -> Alumni"
+        - "Verify that the default page is Alumni dashboard"
+        - "Verify that left menu Alumni is highlighted"
+        - "Verify that there is an entry for each alumni employee"
+        - "Check spelling on all text contents"
+        - "Verify that add alumni button is present at top"
+        - "Verify that there is search input field is present at dashboard"
+        - "Verify that record dropdown is present at dashboard"
+        - "Verify that pagination present at dashboard"
+    Condition:
+        - "Test fails if default Alumni dashboard page is not displayed"
+    automation:
+        status: manual #this test is automated or not
+        testPath: #set this with a valid path if test is automated
+testRun:
+    status: pass #valid status are notRun, pass, fail, sometimeFail
+    date: "9 June, 2020" #set the last when this test was run
+    runBy: Onkar #name of the person running this testType
+    duration: 15 seconds #time taken in seconds to run this test
+    env: qa #valid value are dev, qa, production
+    buildVersion: xxx #mention the build version
+    bug:
+        details:
+                "Multi time bug summary"
+        bugNum: #if bug was reported and filed, report the bug number here

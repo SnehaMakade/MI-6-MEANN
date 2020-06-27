@@ -1,0 +1,35 @@
+testType: e2e #Valid types are unit, e2e, load or failure
+feature:
+    name: "Alumni"
+    owner: "onkar bande"
+    lastUpdate: "22 June, 2020"
+    status: "production" #valid status are "Being defined", "development", "test", "production"
+test:
+    summary: "Employee id field should display error message for blank value"
+    browsers: 
+        - "Chrome"
+    steps:
+        - "Login by super admin user"
+        - "Go to HR -> Alumni"
+        - "Click on 'Add alumni' button, alumni employee detail popup should get open"
+        - "Do not fill employee id field"
+        - "Click on another field"
+        - "Verify error message 'This field is required' should get display"
+        - "Fill values in employee id field"
+        - "Verify error message do not display"
+    conditions:
+        - "Test fails if employee id field do not display error message for blank values"
+    automation:
+        status: manual #this test is automated or not
+        testPath: #set this with a valid path if test is automated
+testRun:
+    status: pass #valid status are notRun, pass, fail, sometimeFail
+    date: "22 June, 2020" #set the last when this test was run
+    runBy: onkar #name of the person running this testType
+    duration: 15 seconds #time taken in seconds to run this test
+    env: qa #valid value are dev, qa, production
+    buildVersion: xxx #mention the build version
+    bug:
+        details:
+                "Multi time bug summary"
+        bugNum: #if bug was reported and filed, report the bug number here

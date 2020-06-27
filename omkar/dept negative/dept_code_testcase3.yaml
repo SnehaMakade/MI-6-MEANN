@@ -1,0 +1,37 @@
+testType: e2e #Valid types are unit, e2e, load or failure
+feature:
+    name: "Employee"
+    owner: "onkar bande"
+    lastUpdate: "26 June, 2020"
+    status: "production" #valid status are "Being defined", "development", "test", "production"
+test:
+    summary: "Department code field should display error message for blank or wrong value"
+    browsers: 
+        - "Chrome"
+    steps:
+        - "Login by super admin user"
+        - "Go to HR -> Employee -> Department"
+        - "Click on 'Add Department' button department detail popup form should get open"
+        - "Do not fill department code field"
+        - "Click on another field"
+        - "Verify error message 'This field is required and must contain only numbers' should display"
+        - "Fill alphabet value in department code field"
+        - "Verify error message should display"
+        - "Fill numeric value in department code field"
+        - "Verify error message should not display"
+     Conditions:
+        - "Test fails if department code field do not display error message for blank or wrong value"
+    automation:
+        status: manual #this test is automated or not
+        testPath: #set this with a valid path if test is automated
+testRun:
+    status: pass #valid status are notRun, pass, fail, sometimeFail
+    date: "26 June, 2020" #set the last when this test was run
+    runBy: onkar #name of the person running this testType
+    duration: 15 seconds #time taken in seconds to run this test
+    env: qa #valid value are dev, qa, production
+    buildVersion: xxx #mention the build version
+    bug:
+        details:
+                "Multi time bug summary"
+        bugNum: #if bug was reported and filed, report the bug number here

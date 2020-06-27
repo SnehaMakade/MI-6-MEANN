@@ -1,0 +1,34 @@
+testType: e2e #Valid types are unit, e2e, load or failure
+feature:
+    name: "Alumni"
+    owner: "onkar bande"
+    lastUpdate: "09 June, 2020"
+    status: "production" #valid status are "Being defined", "development", "test", "production"
+test:
+    summary: "Search by name filter should display alumni employee according to name entered in search field"
+    browsers:
+        - "Chrome"
+    steps:
+        - "Go to HR -> Alumni"
+        - "Verify that there is an entry for each alumni employee"
+        - "Check spelling on all text contents"
+        - "Click on search by name or email filter"
+        - "Enter alumni employee name to search entered alumni employee"
+        - "Verify that there should be only entered name alumni employee present at dashboard"
+    Condition:
+        - "Test fails if search by name filter do not display alumni employee according to name entered in search field"
+    automation:
+        status: manual #this test is automated or not
+        testPath: #set this with a valid path if test is automated
+testRun:
+    status: pass #valid status are notRun, pass, fail, sometimeFail
+    date: "09 June, 2020" #set the last when this test was run
+    runBy: onkar #name of the person running this testType
+    duration: 15 seconds #time taken in seconds to run this test
+    env: qa #valid value are dev, qa, production
+    buildVersion: xxx #mention the build version
+    bug:
+        details:
+                "Multi time bug summary"
+        bugNum: #if bug was reported and filed, report the bug number here
+        
