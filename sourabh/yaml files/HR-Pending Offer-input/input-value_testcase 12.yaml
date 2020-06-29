@@ -1,0 +1,39 @@
+testType: e2e #Valid types are unit, e2e, load or failure
+feature:
+    name: "Pending Offer"
+    owner: "Sourabh Bhojane"
+    lastUpdate: "05 June, 2020"
+    status: "production" #valid status are "Being defined", "development", "test", "production"
+test:
+    summary: "Pending Offer dashboard should show input fields values for added offer"
+    browsers:
+        - "Chrome"
+    steps:
+        - "Go to HR -> Pending Offer"
+        - "Check spelling on all text contents"
+        - "Click on 'Add Offer' button, add offer popup form should get open"
+        - "Fill all the mandatory fields, click on 'Add' button in popup form, pending offer should get display at dashboard"
+        - "At dashboard there should be five input fields present"
+        - "Verify name, email, phone, offer date, joining date fields are present at dashboard"
+        - "Verify added name should get display below name field"
+        - "Verify added email should get display below email field"
+        - "Verify added phone should get display below phone field"
+        - "Verify added for particular offer date should get display below offer date field"
+        - "Verify added for particular Joining date should get display below Joining date field"
+    conditions:
+        - "Test fails if respected input fields values does not get display below respected input field"
+    automation:
+        status: manual #this test is automated or not
+        testPath: #set this with a valid path if test is automated
+testRun:
+    status: pass #valid status are notRun, pass, fail, sometimeFail
+    date: "05 June, 2020" #set the last when this test was run
+    runBy: Sourabh #name of the person running this testType
+    duration: 15 seconds #time taken in seconds to run this test
+    env: qa #valid value are dev, qa, production
+    buildVersion: xxx #mention the build version
+    bug:
+        details:
+                "Multi time bug summary"
+        bugNum: #if bug was reported and filed, report the bug number here
+        

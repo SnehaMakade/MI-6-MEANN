@@ -1,0 +1,32 @@
+testType: e2e #Valid types are unit, e2e, load or failure
+feature:
+    name: "Pending Offer"
+    owner: "Sourabh Bhojane"
+    lastUpdate: "05 May, 2020"
+    status: "production" #valid status are "Being defined", "development", "test", "production"
+test:
+    summary: "Add offer should open add offer candidate popup should close"
+    browsers:
+        - "Chrome"
+    steps:
+        - "Go to EMPLOYEE -> Pending Offer"
+        - "Check spelling on all text contents"
+        - "Click on 'Add Offer' button, add offer for candidate popup form should get open"
+        - "Verify there are select name, personal email, phone number, offer date, joining date, pan, select deparment, select designation, local address, permanent address, and 'Add' button is present"
+        - "Click on close icon present at right top, popup should get closed from dashboard"
+    conditions:
+        - "Test fails if Add Offer should not open add offer candidate popup should not close"
+        status: manual #this test is automated or not
+        testPath: #set this with a valid path if test is automated
+testRun:
+    status: pass #valid status are notRun, pass, fail, sometimeFail
+    date: "05 May, 2020" #set the last when this test was run
+    runBy: Sourabh #name of the person running this testType
+    duration: 10 seconds #time taken in seconds to run this test
+    env: qa #valid value are dev, qa, production
+    buildVersion: xxx #mention the build version
+    bug:
+        details:
+                "Multi time bug summary"
+        bugNum: #if bug was reported and filed, report the bug number here
+        
