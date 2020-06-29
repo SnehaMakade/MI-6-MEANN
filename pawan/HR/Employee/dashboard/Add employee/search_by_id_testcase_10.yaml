@@ -1,0 +1,32 @@
+testType: e2e #Valid types are unit, e2e, load or failure
+feature:
+    name: "Employee dashboard"
+    owner: "Pawan Jagtap"
+    lastUpdate: "05 june, 2020"
+    status: "Production" #valid status are "Being defined", "development", "test", "production"
+test:
+    summary: "Entry of Employee Id search by search field"
+    browsers:
+        - "Chrome"
+    steps:
+        - "Go to HR -> Employee -> Dashboard"
+        - "Check spelling on all text contents"
+        - "Verify that there is a search field by Employee ID"
+        - "Click on search by, enter an employee id"
+        - "Verify that search field work properly"
+    conditions:
+        - "Test fails if entry of Employee Id can not search by search field"
+    automation:
+        status: manual #this test is automated or not
+        testPath: #set this with a valid path if test is automated
+testRun:
+    status: pass #valid status are notRun, pass, fail, sometimeFail
+    date: "05 june, 2020" #set the last when this test was run
+    runBy: Pawan #name of the person running this testType
+    duration: 5 seconds #time taken in seconds to run this test
+    env: qa #valid value are dev, qa, production
+    buildVersion: xxx #mention the build version
+    bug:
+        details:
+                "Multi time bug summary"
+        bugNum: #if bug was reported and filed, report the bug number here
